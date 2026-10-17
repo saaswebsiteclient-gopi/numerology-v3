@@ -1,0 +1,6 @@
+{
+  "name": "Gyan Jyothi School of Occult Science - Numerology Consultation",
+  "description": "Professional numerology consultation, Lo Shu Grid analysis, Vedic numerology, and appointment booking by Gyan Jyothi School of Occult Science.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,51 @@
+<div class="min-h-screen flex flex-col bg-stone-50 text-stone-800 selection:bg-amber-600 selection:text-white">
+  <!-- Navigation Header -->
+  <app-header></app-header>
+
+  <!-- Main Website Flow -->
+  <main id="home" class="flex-grow">
+    <!-- 1. Home / Hero Section -->
+    <app-hero></app-hero>
+
+    <!-- 2. About Us Section -->
+    <app-about></app-about>
+
+    <!-- 3. Numerology Services (18 Services) -->
+    <app-services></app-services>
+
+    <!-- 4. Why Choose Us -->
+    <app-why-choose></app-why-choose>
+
+    <!-- 5. Appointment Booking Form (Most Prominent Feature) -->
+    <app-booking></app-booking>
+
+    <!-- 6. Contact Us -->
+    <app-contact></app-contact>
+  </main>
+
+  <!-- Professional Institutional Footer -->
+  <app-footer></app-footer>
+
+  <!-- Floating Sticky Action Buttons on Mobile / Desktop -->
+  <div class="fixed bottom-6 right-6 z-40 flex flex-col items-end gap-3 pointer-events-auto">
+    <!-- Quick Book Pill -->
+    <button
+      type="button"
+      (click)="scrollToBooking()"
+      class="hidden sm:inline-flex items-center gap-2 px-4 py-2.5 bg-amber-700 hover:bg-amber-800 text-stone-950 font-heading font-black text-xs uppercase tracking-wider rounded-full shadow-lg border border-amber-400/40 hover:scale-105 transition-all cursor-pointer">
+      <mat-icon class="text-sm text-stone-950">event</mat-icon>
+      <span>Book Consultation</span>
+    </button>
+
+    <!-- WhatsApp Floating Action -->
+    <a
+      [href]="whatsappUrl()"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Chat on WhatsApp"
+      class="w-14 h-14 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white flex items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition-all border-2 border-white/20 group">
+      <mat-icon class="text-3xl">chat</mat-icon>
+      <span class="sr-only">Contact on WhatsApp</span>
+    </a>
+  </div>
+</div>
